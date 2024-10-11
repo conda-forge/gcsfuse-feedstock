@@ -1,5 +1,5 @@
 {% set name = "gcsfuse" %}
-{% set version = "0.41.12" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/GoogleCloudPlatform/gcsfuse/archive/v{{ version }}.tar.gz
-  sha256: b4fa0cb7b6695714b9ba961977012354e55998f22039be96a7ababcbfd1cdf40
+  sha256: 492f6b075012147d23e3da592bf3d5eb6c9002e6c8423bf13f6b9de93cb37d21
 
 build:
   number: 0
-  skip: True  # [not linux]
+  skip: true  # [not linux]
 
 requirements:
   build:
